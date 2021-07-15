@@ -1,0 +1,23 @@
+{
+  "name": "db-module",
+  "version": "1.0.0",
+  "description": "A Simple IoT Platform - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "lint-fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanmaranto/IoT-Platform.git"
+  },
+  "author": "alanmaranto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alanmaranto/IoT-Platform/issues"
+  },
+  "homepage": "https://github.com/alanmaranto/IoT-Platform#readme",
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
+}
