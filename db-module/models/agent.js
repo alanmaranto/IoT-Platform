@@ -28,7 +28,7 @@ module.exports = function setupAgentModel(config) {
       allowNull: false,
     },
     connected: {
-      type: Sequelize.BOOL,
+      type: Sequelize.BOOLEAN,
       allowNull: false,
       defaultValue: false,
     },

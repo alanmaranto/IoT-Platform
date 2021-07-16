@@ -16,6 +16,11 @@ module.exports = async function (config) {
   // Try connection with DB
   await sequelize.authenticate();
 
+    // exec sync and force to erase db if setup existe
+  if (config.setup) {
+    await sequelize.sync({ force: true})
+  }
+
   const Agent = {};
   const Metric = {};
 
