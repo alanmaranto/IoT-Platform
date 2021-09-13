@@ -8,7 +8,7 @@
     "lint-fix": "standard --fix",
     "setup": "DEBUG=iosverse:* node setup.js",
     "test": "DEBUG=iosverse:* nyc --reporter=lcov ava --verbose",
-    "test-verbose": "DEBUG=iosverse:* nyc ava --verbose",
+    "test-verbose": "DEBUG=iosverse:* nyc ava --verbose"
   },
   "repository": {
     "type": "git",
