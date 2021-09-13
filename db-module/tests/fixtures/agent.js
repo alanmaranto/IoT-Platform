@@ -1,5 +1,7 @@
 "use strict";
 
+const { extend } = require("../../utils/extend");
+
 const agent = {
   id: 1,
   uuid: "yyy-yyy-yyy",
@@ -30,11 +32,6 @@ const agents = [
     username: "test",
   }),
 ];
-
-function extend(obj, values) {
-  const clone = Object.assign({}, obj);
-  return Object.assign(clone, values);
-}
 
 module.exports = {
   single: agent,
