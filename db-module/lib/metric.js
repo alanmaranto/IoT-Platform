@@ -25,8 +25,8 @@ module.exports = function setupMetric(MetricModel, AgentModel) {
     });
 
     if (agent) {
-      // metric.agentId = agent.id
-      Object.assign(metric, { agent: agent.id });
+      metric.agentId = agent.id
+      // Object.assign(metric, { agentId: agent.id });
       const result = await MetricModel.create(metric);
       return result.toJSON();
     }
