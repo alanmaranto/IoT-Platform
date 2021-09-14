@@ -32,7 +32,7 @@ module.exports = function setupMetric(MetricModel, AgentModel) {
     }
   }
 
-  async function findByTypeAgentUid(type, uuid) {
+  async function findByTypeAgentUuid(type, uuid) {
     const condition = {
       attributes: ["id", "type", "value", "createdAt"],
       where: {
@@ -56,6 +56,6 @@ module.exports = function setupMetric(MetricModel, AgentModel) {
   return {
     create,
     findByAgentUuid,
-    findByTypeAgentUid,
+    findByTypeAgentUuid,
   };
 };
